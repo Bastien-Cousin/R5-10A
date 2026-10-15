@@ -30,4 +30,28 @@ Accept: application/json
 GET {{host}}/games/stats
 Accept: application/json
 
+### Séance 3 — Redis : ajouter des points à Nova
+POST {{host}}/leaderboard/Nova/points/4500
+
+### Séance 3 — Redis : ajouter des points à Krayz
+POST {{host}}/leaderboard/Krayz/points/3200
+
+### Séance 3 — Redis : ajouter des points à Ombre
+POST {{host}}/leaderboard/Ombre/points/5100
+
+### Séance 3 — Redis : ajouter des points à Pixel
+POST {{host}}/leaderboard/Pixel/points/1800
+
+### Séance 3 — Redis : top 5
+GET {{host}}/leaderboard/top/5
+Accept: application/json
+
+### Séance 3 — Redis : rang de Krayz
+GET {{host}}/leaderboard/rank/Krayz
+Accept: application/json
+
+### Séance 3 — Redis : mesure du cache
+GET {{host}}/games/timed
+Accept: application/json
+
 { "pseudo": "Pixel", "coins": 500 }
